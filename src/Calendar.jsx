@@ -5,19 +5,35 @@ import { ModalWindow } from './ModalWindow';
 
 export function AppCalendar() {
     const [dateObj , setDateObj] = useState(new Date());
+    const [show, setShow] = useState(false);
+    const [date, setDate] = useState(null);
+    const showModal = () => {
+      setShow(true);
+    };
+    const closeModal = () => {
+      setDate(null);
+      setShow(false);
+    };
+    const onClickDay = (value, event) => {
+      setDate(value);
+      setShow(true);
+    };
     
     return (
         <div>
           <Calendar
             onChange={setDateObj}
             value={dateObj}
+            onClickDay={onClickDay} 
           />
           <div>
-            <button>Click</button>
+            <button onClick={ setShow }>Click</button>
           </div>
-          <div id="overlay">
-            <ModalWindow />
-          </div>
+          {show && (
+            <div id="overlay">
+              <ModalWindow onClose={closeModal} date={date} />
+            </div>
+          )}
         </div>
     );
 }
