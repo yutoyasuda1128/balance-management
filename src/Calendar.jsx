@@ -27,7 +27,7 @@ export function AppCalendar() {
             onClickDay={onClickDay} 
           />
           <div>
-            <button onClick={ setShow }>Click</button>
+            <button onClick={ setShow }>全体の収支</button>
           </div>
           {show && (
             <div id="overlay">
