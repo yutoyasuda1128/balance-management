@@ -1,8 +1,17 @@
 .ModalWindow-Content {
     z-index:2;
-    width:50%;
+    width:80%;
     padding: 16px;
     background:#fff;
+}
+
+.ModalWindow-InputArea {
+    display:flex;
+    width:100%;
+}
+
+.Expenditureincome {
+    margin-left: auto;
 }
 
 
