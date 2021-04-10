@@ -10,8 +10,20 @@
     width:100%;
 }
 
+.ModalWindow-ButtonArea {
+    display:flex;
+}
+
 .Expenditureincome {
     margin-left: auto;
+}
+
+.ModalWindow-CategoryArea {
+    width:40%;
+}
+
+.ModalWindow-Input {
+    width:60%;
 }
 
 

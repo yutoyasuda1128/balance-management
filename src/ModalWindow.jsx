@@ -13,19 +13,19 @@ export function ModalWindow(props){
   console.log(props.date.getFullYear())
   return (
     <div className="ModalWindow-Content">
-      <div>{ formatDate(props.date)}
+      <div className="ModalWindow-ButtonArea">{ formatDate(props.date)}
       　<div className="Expenditureincome">
           <button>支出</button>
           <button>収入</button>
         </div>
       </div>
       <div className="ModalWindow-InputArea">
-        <select>
+        <select className="ModalWindow-CategoryArea">
           <option value="">カテゴリ</option>
           <option value="food">食費</option>
           <option value="miscellaneous">雑費</option>
         </select>
-        <input type="number"  placeholder="金額"/>
+        <input className="ModalWindow-Input" type="number"  placeholder="金額"/>
       </div>
       <p><button onClick={props.onClose}>close</button></p>
     </div>
