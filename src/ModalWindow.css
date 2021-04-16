@@ -25,6 +25,26 @@
 .ModalWindow-Input {
     width:60%;
 }
+.ModalWindow-total-amount {
+    display:flex;
+}
 
+.ModalWindow-total {
+    width:20%;
+}
 
+.ModalWindow-expense {
+    width:10%;
+}
 
+.ModalWindow-expense-total {
+    width:30%;
+}
+
+.ModalWindow-income {
+    width:10%;
+}
+
+.ModalWindow-income-total {
+    width:30%;
+}
